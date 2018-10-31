@@ -9,7 +9,6 @@ if (!empty($_SESSION['loggedIn'])) {
 		$prepared = $mysqli->prepare($sql);
 		$prepared->execute();
 		$result = $prepared->get_result();
-		$data = [];
 		if ($result->num_rows > 0) {
 			$success = "Success! You are logged in as $username";
 			$_SESSION['loggedIn'] = $username;
