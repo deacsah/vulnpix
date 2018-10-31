@@ -18,4 +18,4 @@ VALUES (NULL, 'admin', 'password', 'yes'),
 (NULL, 'user1', '123456', 'no'),
 (NULL, 'user2', 'asdf', 'no');
 ```
-3. Edit `index.php` and correct database settings
+3. Edit `index.php` to reflect the correct database settings
