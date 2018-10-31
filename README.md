@@ -1,7 +1,7 @@
 # vulnpix
 A basic vulnerable php/mysql web application for pentesting purposes. Don't put it on an internet facing server, obviously. 
 
-## installation
+## Installation
 1. Dump the files onto a webserver (`public_html/` being the webroot)
 2. Execute these queries in a new database:
 ```sql
