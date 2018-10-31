@@ -1,5 +1,4 @@
 <?php 
-$error = '';
 if (!empty($_SESSION['loggedIn'])) {
 	$success = 'You are already logged in!';
 } else {
