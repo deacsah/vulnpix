@@ -1,0 +1,1 @@
+<p>Remote File Inclusion is a vulnerability where it's possible to include remotely hosted files into the webapplication and in some cases, even have them executed!</p>

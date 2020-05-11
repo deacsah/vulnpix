@@ -1,7 +1,6 @@
 <div class="well">
-	<form method="post" action="index.php?page=xss.php">
+	<form method="POST">
 		<div class="form-group field-loginform-username required has-success">
-			<input type="hidden" name="page" class="form-control" value="<?php $_GET['page'] ?>" />
 			<input type="text" name="search" class="form-control" placeholder="Search" />
 			<br/>
 			<input type="submit" name="submit" class="btn btn-info" value="Search" />
