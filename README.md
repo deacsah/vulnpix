@@ -5,9 +5,9 @@ A basic vulnerable php/mysql web application for pentesting purposes. Don't put 
 1. Dump the files onto a webserver (`public_html/` being the webroot)
 2. Execute these queries in a new database:
 ```sql
-CREATE DATABASE vulnpix;
+CREATE DATABASE `vulnpix`;
 
-USE vulnpix;
+USE `vulnpix`;
 
 CREATE TABLE `user` (
 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
