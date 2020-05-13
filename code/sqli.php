@@ -28,5 +28,4 @@ $result = $prepared->get_result();
 			?>
 		</table>
 	<?php endif ?>
-	
 </div>
