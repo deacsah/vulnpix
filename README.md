@@ -3,7 +3,7 @@ A basic vulnerable php/mysql web application for pentesting purposes. Don't put 
 
 ## Installation
 1. Dump the files onto a webserver (`public_html/` being the webroot)
-2. Execute these queries in a new database:
+2. Execute these queries:
 ```sql
 CREATE DATABASE `vulnpix`;
 
