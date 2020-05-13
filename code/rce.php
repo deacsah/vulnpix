@@ -10,15 +10,18 @@ if (!empty($_POST['ip'])) {
 		<div class="col-md-2">
 			<p>Execute a ping:</p>
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-8">
 			<form method="POST">
 				<input type="text" name="ip" class="form-control" />
 			</form>
 		</div>
+		<div class="col-md-2">
+			<input type="submit" name="submit" class="btn btn-info" value="Execute" />
+		</div>
 	</div>
 	<?php if (!empty($output)): ?>
 		<hr/>
-		<p class="text-center">Command executed: <?php echo $_POST['ip']  ?></p>
+		<p class="text-center">Command executed: <?php echo $cmd.$_POST['ip']  ?></p>
 		<hr/>
 		<div>
 			<?php foreach ($output as $line): ?>
