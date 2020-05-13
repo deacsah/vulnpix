@@ -77,7 +77,5 @@ $allowedPages = ['home.php', 'sqli.php', 'xss.php', 'rce.php', 'lfi.php', 'login
         ?>
         </div>
     </div>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
