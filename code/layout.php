@@ -1,6 +1,6 @@
 <?php 
 $page = !empty($_GET['page']) ? $_GET['page'] : 'home.php';
-$allowedPages = ['home.php', 'sqli.php', 'xss.php', 'rce.php', 'lfi.php', 'login.php', 'logout.php'];
+$allowedPages = ['home.php', 'sqli.php', 'xss.php', 'rce.php', 'lfi.php', 'login.php', 'upload.php', 'logout.php'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,10 +26,6 @@ $allowedPages = ['home.php', 'sqli.php', 'xss.php', 'rce.php', 'lfi.php', 'login
         }
         .logo {
             width: 50px
-        }
-        .info {
-            border: 1px solid #ededed;
-            padding: 20px;
         }
     </style>
 </head>
