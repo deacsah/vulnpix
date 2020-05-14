@@ -19,7 +19,7 @@ if (!empty($_POST['ip'])) {
 			<input type="submit" name="submit" class="btn btn-info" value="Execute" />
 		</div>
 	</div>
-	<?php if (!empty($output)): ?>
+	<?php if (!empty($_POST['ip'])): ?>
 		<hr/>
 		<p class="text-center">Command executed: <?php echo $cmd.$_POST['ip']  ?></p>
 		<hr/>

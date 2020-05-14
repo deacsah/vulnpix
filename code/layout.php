@@ -1,6 +1,6 @@
 <?php 
 $page = !empty($_GET['page']) ? $_GET['page'] : 'home.php';
-$allowedPages = ['home.php', 'sqli.php', 'xss.php', 'rce.php', 'lfi.php', 'login.php', 'upload.php', 'logout.php'];
+$allowedPages = ['home.php', 'sqli.php', 'xss.php', 'cinj.php', 'lfi.php', 'login.php', 'upload.php', 'logout.php'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,11 +51,11 @@ $allowedPages = ['home.php', 'sqli.php', 'xss.php', 'rce.php', 'lfi.php', 'login
                         <a class="nav-link <?php echo $page == 'lfi' ? 'active' : ''; ?>" href="index.php?page=lfi.php">LFI/RFI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $page == 'rce' ? 'active' : ''; ?>" href="index.php?page=rce.php">RCE</a>
+                        <a class="nav-link <?php echo $page == 'cinj' ? 'active' : ''; ?>" href="index.php?page=cinj.php">ComInj</a>
                     </li>
                     <?php if (!empty($_SESSION['loggedIn'])): ?>
                         <li class="nav-item">
-                            <a class="nav-link <?php echo $page == 'logout' ? 'active' : ''; ?>" href="index.php?page=logout.php">Logout</a>
+                            <a class="nav-link <?php echo $page == 'logout' ? 'active' : ''; ?>" href="index.php?page=logout.php">Logout (<?php echo $_SESSION['loggedIn'] ?>)</a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
