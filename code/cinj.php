@@ -6,19 +6,19 @@ if (!empty($_POST['ip'])) {
 }
 ?>
 <div class="well">
-	<div class="row">
-		<div class="col-md-2">
-			<p>Execute a ping:</p>
-		</div>
-		<div class="col-md-8">
-			<form method="POST">
+	<form method="POST">
+		<div class="row">
+			<div class="col-md-2">
+				<p>Execute a ping:</p>
+			</div>
+			<div class="col-md-8">
 				<input type="text" name="ip" class="form-control" />
-			</form>
+			</div>
+			<div class="col-md-2">
+				<input type="submit" name="submit" class="btn btn-info" value="Execute" />
+			</div>
 		</div>
-		<div class="col-md-2">
-			<input type="submit" name="submit" class="btn btn-info" value="Execute" />
-		</div>
-	</div>
+	</form>
 	<?php if (!empty($_POST['ip'])): ?>
 		<hr/>
 		<p class="text-center">Command executed: <?php echo $cmd.$_POST['ip']  ?></p>
