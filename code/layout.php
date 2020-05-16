@@ -1,6 +1,6 @@
 <?php 
 $page = !empty($_GET['page']) ? $_GET['page'] : 'home.php';
-$allowedPages = ['home.php', 'sqli.php', 'xss.php', 'cinj.php', 'lfi.php', 'login.php', 'upload.php', 'logout.php'];
+$allowedPages = ['home.php', 'sqli.php', 'xss.php', 'cinj.php', 'lfi.php', 'login.php', 'upload.php', 'openredirect.php', 'logout.php'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,6 +55,9 @@ $allowedPages = ['home.php', 'sqli.php', 'xss.php', 'cinj.php', 'lfi.php', 'logi
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php echo $page == 'upload' ? 'active' : ''; ?>" href="index.php?page=upload.php">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $page == 'openredirect' ? 'active' : ''; ?>" href="index.php?page=openredirect.php">Open redirect</a>
                     </li>
                     <?php if (!empty($_SESSION['loggedIn'])): ?>
                         <li class="nav-item">
