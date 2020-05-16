@@ -51,7 +51,10 @@ $allowedPages = ['home.php', 'sqli.php', 'xss.php', 'cinj.php', 'lfi.php', 'logi
                         <a class="nav-link <?php echo $page == 'lfi' ? 'active' : ''; ?>" href="index.php?page=lfi.php">LFI/RFI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $page == 'cinj' ? 'active' : ''; ?>" href="index.php?page=cinj.php">ComInj</a>
+                        <a class="nav-link <?php echo $page == 'cinj' ? 'active' : ''; ?>" href="index.php?page=cinj.php">CI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $page == 'upload' ? 'active' : ''; ?>" href="index.php?page=upload.php">Upload</a>
                     </li>
                     <?php if (!empty($_SESSION['loggedIn'])): ?>
                         <li class="nav-item">
