@@ -1,0 +1,40 @@
+version: '3.1'
+
+services:
+
+  db:
+    build:
+      context: .
+      dockerfile: docker/mysql/Dockerfile
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
+    command: --default-authentication-plugin=mysql_native_password --init-file /docker-entrypoint-initdb.d/db.sql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: w00t
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    links:
+      - db
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - 8888:80
+    links:
+      - db
+
+volumes:
+  db_data:
+    

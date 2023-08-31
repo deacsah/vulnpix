@@ -23,3 +23,13 @@ VALUES (NULL, 'admin', 'password', 'yes'),
 (NULL, 'user2', 'asdf', 'no');
 ```
 3. Edit `index.php` to reflect the correct database settings
+
+# Docker
+
+Starting should be as simple as running:
+
+```bash
+docker compose up -d
+```
+
+To use different ports, change them in docker-compose.yml
