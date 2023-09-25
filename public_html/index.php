@@ -1,6 +1,6 @@
 <?php
 // change mysql database settings:
-$server = "localhost";
+$server = "db";
 $username = "root";
 $password = "w00t";
 $database = "vulnpix";
